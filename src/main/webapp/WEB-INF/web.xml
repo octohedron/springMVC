@@ -9,6 +9,4 @@
     <welcome-file-list>
         <welcome-file>/resources/index.html</welcome-file>
     </welcome-file-list>
-
-
 </web-app>
