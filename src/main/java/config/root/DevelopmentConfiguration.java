@@ -14,7 +14,7 @@ import java.util.Map;
  * Created on 5/26/16.
  */
 @Configuration
-@Profile("development")
+//@Profile("development")
 @EnableTransactionManagement
 public class DevelopmentConfiguration {
 
