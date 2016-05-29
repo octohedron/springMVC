@@ -1,5 +1,6 @@
 package config.root;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver;
@@ -15,6 +16,7 @@ import java.util.Map;
  */
 @Configuration
 //@Profile("development")
+@ComponentScan(basePackages = "blog.repos")
 @EnableTransactionManagement
 public class DevelopmentConfiguration {
 

@@ -1,7 +1,7 @@
 package config;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-import config.root.DevelopmentConfiguration;
+import config.root.DevelopmentH2Configuration;
 import config.root.RootContextConfig;
 import config.servlet.ServletContextConfig;
 /**
@@ -10,7 +10,7 @@ import config.servlet.ServletContextConfig;
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
   @Override
   protected Class<?>[] getRootConfigClasses() {
-    return new Class<?>[]{RootContextConfig.class, DevelopmentConfiguration.class};
+    return new Class<?>[]{RootContextConfig.class, DevelopmentH2Configuration.class};
   }
   @Override
   protected Class<?>[] getServletConfigClasses() {
